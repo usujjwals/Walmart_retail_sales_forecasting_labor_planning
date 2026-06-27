@@ -1,0 +1,21 @@
+{
+    "best_model": "XGBoost Regressor",
+    "models": [
+        {
+            "model_name": "XGBoost Regressor",
+            "holdout_start": "2012-08-03",
+            "holdout_end": "2012-10-26",
+            "holdout_rows": 37865,
+            "mae": 1225.4331909367982,
+            "wape": 0.07710549116431333
+        },
+        {
+            "model_name": "Ridge Regression",
+            "holdout_start": "2012-08-03",
+            "holdout_end": "2012-10-26",
+            "holdout_rows": 37865,
+            "mae": 1400.7085151598728,
+            "wape": 0.08813399117815165
+        }
+    ]
+}

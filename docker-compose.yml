@@ -1,0 +1,33 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: walmart_mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: walmart_password
+      MYSQL_DATABASE: walmart_workspace
+    ports:
+      - "3307:3306"
+    volumes:
+      - walmart_mysql_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-pwalmart_password"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  pipeline:
+    build: .
+    container_name: walmart_pipeline
+    depends_on:
+      mysql:
+        condition: service_healthy
+    environment:
+      MYSQL_HOST: mysql
+      MYSQL_PORT: 3306
+      MYSQL_DATABASE: walmart_workspace
+      MYSQL_USER: root
+      MYSQL_PASSWORD: walmart_password
+
+volumes:
+  walmart_mysql_data:

@@ -1,0 +1,19 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Mac
+.DS_Store
+
+# Environment / passwords
+.env
+
+# Tableau files if too large
+*.twbx
+*.hyper
+
+# Docker / logs
+*.log
+
