@@ -137,8 +137,9 @@ WALMART PROJECT/
 │   ├── mart_store_week_summary.csv
 │   ├── mart_top_at_risk_store_dept.csv
 │   └── dashboard_screenshot.png
-│
-├── .env
+├── dockerfile
+├── .dockerignore
+├── docker_compose.yml
 ├── requirements.txt
 └── README.md
 ```
@@ -750,15 +751,6 @@ The Docker pipeline performs the following steps:
 docker compose up --build
 ---
 
-## Resume Summary
-
-**Retail Sales Forecasting & Workforce Labor Planning Dashboard | Python, XGBoost, MySQL, Tableau**
-
-- Forecasted weekly Walmart store-department sales using XGBoost, achieving **7.71% WAPE** on a **37,865-record, 13-week holdout period** after comparing against Ridge Regression.
-- Built MySQL workforce planning mart integrating **421K+ historical sales records**, store attributes, simulated labor standards, and schedule capacity to calculate required labor hours, staffing gaps, overtime risk, productivity, and readiness scores.
-- Developed Tableau dashboard identifying **1,294 labor gap hours**, **938.9 overtime risk hours**, forecast variance, labor coverage, and staffing recommendations for operational decision support.
-
----
 
 ## Future Improvements
 
