@@ -1,7 +1,7 @@
 # Retail Sales Forecasting & Workforce Labor Planning Dashboard
 
 ## Project Overview
-### Tableau Link: https://public.tableau.com/views/Walmartsalesforecastandlaborallocation/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
+## Tableau Link: https://public.tableau.com/views/Walmartsalesforecastandlaborallocation/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
 This project connects **retail demand forecasting** with **workforce labor planning** using the Walmart Recruiting Store Sales Forecasting dataset.
 
 The goal of the project is to forecast weekly sales by store and department, convert forecasted demand into labor requirements, compare required labor against available scheduled labor, and identify potential staffing gaps, overtime risk, productivity issues, and site readiness concerns.
